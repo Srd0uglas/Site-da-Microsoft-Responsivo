@@ -104,6 +104,7 @@ header{
     }
 }
 .cards{
+    
     display: flex;
     width: 100%;
     justify-content: center;
@@ -115,22 +116,22 @@ header{
     gap: 20px;
     width: 100%;
     /* os cards não irão crescer mais qque 1500px */
-    max-width: 1500px;
-    
-        .card{
-            /* card cresce de acordo com a tela */
-            flex-grow: 1;
-            border: none;
-            border-radius: 0;
-            box-shadow: 0 .1875rem .4375rem 0 rgba(0,0,0,.13),0 .0625rem .125rem 0 rgba(0,0,0,.11);
-          
-            .card-body{
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-            }
-        } 
-}
+    max-width: 1500px;  
+
+    .card{
+        /* card cresce de acordo com a tela */
+        flex-grow: 1;
+        border: none;
+        border-radius: 0;
+        box-shadow: 0 .1875rem .4375rem 0 rgba(0,0,0,.13),0 .0625rem .125rem 0 rgba(0,0,0,.11);
+      
+        .card-body{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+         }
+      }   
+   }
 }
 
 
