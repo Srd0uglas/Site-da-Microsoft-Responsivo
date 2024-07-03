@@ -108,6 +108,7 @@ header{
     display: flex;
     width: 100%;
     justify-content: center;
+    padding:  0 5%;
 
     .wrapper-cards{
      display: flex;
@@ -129,9 +130,78 @@ header{
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+
+            .card-text{
+                margin-bottom: 10px;
+            }
          }
       }   
    }
+}
+.btn .btn-primary{
+    border: 0;
+    border-radius: 0;
+    background-color: #0067b8;
+
+}
+
+.banner{
+    /* 5% de preenchimento dos lados */
+    padding: 0 5%;
+    /* um intem embaixo do outro */
+    display: flex;
+    /* um item embaixo do outro */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* desgrdou o banner dos cards */
+     margin: 80px 0;
+    
+    img{
+    width: 100%;
+    max-width: 1500px;
+    }
+
+    .card{
+        /* deixou o card no meio */
+        position: absolute;
+        /* encostou o card na esquerda */
+        left: 13%;
+        border-radius: 0;
+        border: none;
+        padding: 30px;
+
+        h5{
+            font-size: 1.5rem;
+            margin-bottom: 16px;
+        }
+    }
+}
+
+.title-banner-4{
+    /* ocupar todo o espaço disponível  */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0 5%;
+    margin-bottom: 20px;
+   
+
+    div{
+        width: 100%;
+        max-width: 1500px;
+
+        h3{
+             font-size: 2.4rem;
+             font-weight: 600;
+        }
+
+    }
+
+}
+.social-media{
+    width: 100%;
+    
 }
 
 
