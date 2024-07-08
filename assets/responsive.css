@@ -1,0 +1,25 @@
+/* quando a tela for 480px ou maior o icone vai desaparecer */
+@media (max-width: 480px){
+    header{
+        .list-microsoft{
+            /*display: none =  fazer com que o icone suma */
+            display: none;
+        }
+        .list-microsoft-resp{
+            display: block;
+        }
+    }
+
+    .slide{
+        .img-carrossel{
+            display: none;
+        }
+    }
+
+
+    .footer{
+        /* tela grande = um do lado do outro (flex-direction: row;) */
+        /* tela pequena = um embaixo do outro (flex-diretion: column) */
+        flex-direction: column;
+    }
+}

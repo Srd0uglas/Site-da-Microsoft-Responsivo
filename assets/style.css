@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -7,7 +7,7 @@
     list-style: none;
 }
 
-header{
+header {
     display: flex;
     align-items: center;
     /* deixou  o logo no lado esquerdo e os itens do menu ao lado direito da tela */
@@ -15,31 +15,35 @@ header{
     /* altura do header  */
     height: 70px;
 
-    img{
+    img {
         /* Definindo um tamanho para o Logo */
         height: 36px;
         /* 16px cima e baixo e 10px aos lados */
         margin: 16px 10px;
     }
 
-    ul{
+    ul {
         /* o links ficaram um do lado do outro  */
         display: flex;
         /* alinhados no eixo x */
         align-items: center;
         /* espaçamento entre os links */
         gap: 20px;
-        cursor: pointer;;
-    }
-    
-    li{
         cursor: pointer;
-        color: #262626; 
+        ;
+    }
+
+    li {
+        cursor: pointer;
+        color: #262626;
+    }
+    .list-microsoft-resp{
+        display: none;
     }
 
 }
 
-.carrossel-item{
+.carrossel-item {
     /* Não fica limitado pelo elemento pai  */
     position: absolute;
     top: 60px;
@@ -48,23 +52,26 @@ header{
     /* margem nos tetxos da esquerda */
     margin-left: 5%;
 
-    h2{
+    h2 {
         font-size: 1.8rem;
         font-weight: 600;
         /* desgrudar dos textos debaixo */
         margin-bottom: 10px;
     }
-    p{
+
+    p {
         font-size: 1.2rem;
     }
-    button{ 
+
+    button {
         background-color: #0067b8;
         color: #fff;
         padding: 10px 12px;
         font-weight: 500;
         border: none;
     }
-    a{
+
+    a {
         font-size: 1.2rem;
         margin-left: 10px;
         font-weight: 600;
@@ -73,79 +80,86 @@ header{
 }
 
 
-.slide{
-    .carousel-control-prev, carousel-control-next{
+.slide {
+
+    .carousel-control-prev,
+    carousel-control-next {
         top: 300px;
     }
 }
 
-.links{
+.links {
     display: flex;
     gap: 50px;
     align-items: center;
     justify-content: center;
     width: 100%;
     margin: 80px 0;
-    div{
+
+    div {
         display: flex;
         /* deixou os links embaixo dos icones */
         flex-direction: column;
         align-items: center;
         gap: 10px;
-        img{
+
+        img {
             /* tamaho das imagens */
             height: 40px;
         }
-        a{
+
+        a {
             color: #0067b8;
             font-size: 1.2rem;
             font-weight: 500;
         }
     }
 }
-.cards{
-    
+
+.cards {
+
     display: flex;
     width: 100%;
     justify-content: center;
-    padding:  0 5%;
+    padding: 0 5%;
 
-    .wrapper-cards{
-     display: flex;
-    /* fez com que os cards se preenchessemo espaço na tela */
-    justify-content: space-between;
-    gap: 20px;
-    width: 100%;
-    /* os cards não irão crescer mais qque 1500px */
-    max-width: 1500px;  
+    .wrapper-cards {
+        display: flex;
+        /* fez com que os cards se preenchessemo espaço na tela */
+        justify-content: space-between;
+        gap: 20px;
+        width: 100%;
+        /* os cards não irão crescer mais qque 1500px */
+        max-width: 1500px;
 
-    .card{
-        /* card cresce de acordo com a tela */
-        flex-grow: 1;
-        border: none;
-        border-radius: 0;
-        box-shadow: 0 .1875rem .4375rem 0 rgba(0,0,0,.13),0 .0625rem .125rem 0 rgba(0,0,0,.11);
-      
-        .card-body{
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
+        .card {
+            /* card cresce de acordo com a tela */
+            flex-grow: 1;
+            border: none;
+            border-radius: 0;
+            box-shadow: 0 .1875rem .4375rem 0 rgba(0, 0, 0, .13), 0 .0625rem .125rem 0 rgba(0, 0, 0, .11);
 
-            .card-text{
-                margin-bottom: 10px;
+            .card-body {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                .card-text {
+                    margin-bottom: 10px;
+                }
             }
-         }
-      }   
-   }
+        }
+    }
 }
-.btn .btn-primary{
+
+.btn .btn-primary {
     border: 0;
     border-radius: 0;
     background-color: #0067b8;
 
 }
 
-.banner{
+.banner {
     /* 5% de preenchimento dos lados */
     padding: 0 5%;
     /* um intem embaixo do outro */
@@ -155,14 +169,14 @@ header{
     justify-content: center;
     align-items: center;
     /* desgrdou o banner dos cards */
-     margin: 80px 0;
-    
-    img{
-    width: 100%;
-    max-width: 1500px;
+    margin: 80px 0;
+
+    img {
+        width: 100%;
+        max-width: 1500px;
     }
 
-    .card{
+    .card {
         /* deixou o card no meio */
         position: absolute;
         /* encostou o card na esquerda */
@@ -171,39 +185,119 @@ header{
         border: none;
         padding: 30px;
 
-        h5{
+        h5 {
             font-size: 1.5rem;
             margin-bottom: 16px;
         }
     }
 }
 
-.title-banner-4{
+.title-banner-4 {
     /* ocupar todo o espaço disponível  */
     width: 100%;
+    /* cards um ao lado do outro */
     display: flex;
+    /* alinhamento no eixo x */
     justify-content: center;
+    /* enchimento de 0 cima e baixo e 5% dos lados */
     padding: 0 5%;
+    /* Afastar os cards do Para Negócios  */
     margin-bottom: 20px;
-   
 
-    div{
+
+    div {
         width: 100%;
         max-width: 1500px;
 
-        h3{
-             font-size: 2.4rem;
-             font-weight: 600;
+        h3 {
+            /* Tamanho da fonte */
+            font-size: 2.4rem;
+            font-weight: 600;
         }
 
     }
 
 }
-.social-media{
+
+.social-media {
     width: 100%;
-    
+    /* ocupar todo o espaço disponível  */
+    width: 100%;
+    /* cards um ao lado do outro */
+    display: flex;
+    /* alinhamento no eixo x */
+    justify-content: center;
+    /* enchimento de 0 cima e baixo e 5% dos lados */
+    padding: 0 5%;
+    /* Afastar os cards do Para Negócios  */
+    margin-bottom: 20px;
+
+
+    div {
+        width: 100%;
+        max-width: 1500px;
+
+        ul {
+            display: flex;
+
+            padding: 0;
+            margin: 60px 0;
+            gap: 20px;
+
+            p {
+                margin: 0;
+                font-size: 1.2rem;
+            }
+
+            li {
+                cursor: pointer;
+            }
+
+            img {
+                width: 34px;
+
+            }
+        }
+    }
+
 }
 
+.btn-start {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+    /* fez com que o botão ficasse igual um post it */
+    position: sticky;
+    bottom: 20px;
 
+    a {
+        cursor: pointer;
+        padding: 0.6rem 0.75rem;
+        background: linear-gradient(rgba(0, 0, 0, .15), rgba(0, 0, 0, .15));
+        color: #000;
+        font-weight: 500;
+        text-decoration: none;
+    }
+}
 
+.footer {
+    display: flex;
+    background-color: #f2f2f2;
+    margin-top: 20px;
 
+    ul {
+        margin: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    ul .bold {
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    li {
+        color: #616161;
+    }
+}
