@@ -1,3 +1,6 @@
+
+
+
 /* quando a tela for 480px ou maior o icone vai desaparecer */
 @media (max-width: 480px){
     header{
@@ -11,8 +14,27 @@
     }
 
     .slide{
+        .carousel-inner{
+            height: 540px;
+        }
+        .carousel-control-prev{
+            top: -50px;
+        }
         .img-carrossel{
             display: none;
+        }
+        .img-carrossel-resp{
+            display: block;
+        }
+        /* Ajuste das frases no banner */
+        .carrossel-item {
+            width: 70%;
+            position: static;
+            margin-top: 20px;
+
+            h2{
+                font-size: 1.5rem;
+            }
         }
     }
 
@@ -21,5 +43,29 @@
         /* tela grande = um do lado do outro (flex-direction: row;) */
         /* tela pequena = um embaixo do outro (flex-diretion: column) */
         flex-direction: column;
+    }
+
+    .links{
+        flex-wrap: wrap;
+        padding: 20px;
+        margin: 20px 0;
+    }
+
+    .wrapper-cards{
+        flex-direction: column;
+        align-items: center;
+    }
+    .banner{
+        flex-direction: column;
+        margin: 40px 0;
+        .card{
+            width: 100%;
+            position: static;
+            padding: 5px;
+            width:20rem;
+        }
+    }
+    .btn-start{
+        position: static;
     }
 }
